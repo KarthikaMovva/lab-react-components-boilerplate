@@ -1,9 +1,9 @@
-import imageData from './GallaryData';
-export default function(){
+// import imageData from './GallaryData';
+export default function(props){
     return(
         <div>
         {
-          imageData.map(image=>{
+          props.arrdata.map(image=>{
             return(
               <div key={image.id} className="column">
                 <img src={image.img} alt=""></img>
